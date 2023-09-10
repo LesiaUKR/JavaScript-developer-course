@@ -147,3 +147,7 @@ carHtml = `
    return 5;
    }
 document.body.innerHTML = carHtml;
+
+
+/********* Questionary task *********/
+
