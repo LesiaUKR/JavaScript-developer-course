@@ -149,5 +149,3 @@ carHtml = `
 document.body.innerHTML = carHtml;
 
 
-/********* Questionary task *********/
-
