@@ -259,4 +259,178 @@
 //   }
 // }
 
+/* Task 15 Рекурсія*/
 
+//    function multiply(arr, n) {
+//     if (n <= 0) {
+//       return 1;
+//     } else {
+//       return multiply(arr, n - 1) * arr[n - 1];
+//     }
+// }
+  
+// console.log(multiply([1, 2, 3, 4], 3))
+
+/* Task 16 Рекурсія*/
+
+// function sum(arr, n) {
+//   // Змініть код лише під цим рядком
+//  if (n <= 0) {
+//       return 0;
+//     } else {
+//       return sum(arr, n - 1) + arr[n - 1];
+//     }
+//   // Змініть код лише над цим рядком
+// } 
+
+// console.log(sum([1], 0));
+// console.log(sum([2, 3, 4], 1));
+// console.log(sum([2, 3, 4, 5], 3));
+
+/* Task 17 */
+
+// const contacts = [
+//   {
+//     firstName: "Akira",
+//     lastName: "Laine",
+//     number: "0543236543",
+//     likes: ["Pizza", "Coding", "Brownie Points"],
+//   },
+//   {
+//     firstName: "Harry",
+//     lastName: "Potter",
+//     number: "0994372684",
+//     likes: ["Hogwarts", "Magic", "Hagrid"],
+//   },
+//   {
+//     firstName: "Sherlock",
+//     lastName: "Holmes",
+//     number: "0487345643",
+//     likes: ["Intriguing Cases", "Violin"],
+//   },
+//   {
+//     firstName: "Kristian",
+//     lastName: "Vos",
+//     number: "unknown",
+//     likes: ["JavaScript", "Gaming", "Foxes"],
+//   },
+// ];
+
+// function lookUpProfile(name, prop) {
+//   // Змініть код лише під цим рядком
+
+//    for (let i = 0; i < contacts.length; i += 1) {
+
+//       if (contacts[i].firstName === name) {
+//          if (contacts[i].hasOwnProperty(prop)) {
+//             return contacts[i][prop];
+
+//          } else {
+//             return "No such property"
+//          }
+//       }
+//    }
+//  return "No such contact"
+  
+
+//   // Змініть код лише над цим рядком
+// }
+// console.log(lookUpProfile("Akira", "likes"));
+// console.log(lookUpProfile("Kristian", "lastName"));
+// console.log(lookUpProfile("Sherlock", "likes"));
+// console.log(lookUpProfile("Harry", "likes"));
+// console.log(lookUpProfile("Bob", "number"));
+// console.log(lookUpProfile("Bob", "potato"));
+// console.log(lookUpProfile("Akira", "address"));
+
+// /* Task 18 */
+
+// function randomWholeNum() {
+//   return Math.floor(Math.random() * 10);
+// }
+
+/* Task 19 */
+
+// Створіть функцію під назвою randomRange, яка приймає діапазон myMin та myMax і 
+// повертає випадкове ціле число, яке більше або дорівнює myMin і менше або дорівнює myMax.
+
+// function randomRange(myMin, myMax) {
+
+//   return Math.floor(Math.random() * (myMax -myMin + 1)) + myMin;
+// }
+
+/* Task 20 */
+
+// Використайте parseInt() у функції convertToInteger, щоб вхідний рядок str перетворився 
+// на ціле число та повернувся.
+
+// function convertToInteger(str) {
+// return parseInt(str);
+// }
+
+// convertToInteger("56");
+
+/* Task 21 */
+
+// Використайте parseInt() у функції convertToInteger, щоб двійкове число перетворилось на ціле число і повернулось.
+
+// function convertToInteger(str) {
+// return parseInt(str, 2);
+// }
+
+// convertToInteger("10011");
+
+/* Task 22 */
+
+// Використайте декілька умовних операторів у функції checkSign, дотримуючись рекомендованого формату,
+// використаного у findGreaterOrEqual, щоб перевірити, чи число додатнє,
+// від’ємне або дорівнює нулю.Функція повинна повертати positive, negative або zero.
+
+// function checkSign(num) {
+// return (num === 0) ? 'zero'
+// : (num < 0) ? 'negative'
+// : 'positive'
+// }
+
+// checkSign(10);
+
+/* Task 23 */
+
+// function countdown(n){
+// if (n<1) {
+//     return [];
+//   } else {
+//     const newArray = countdown(n - 1);
+//    const unshiftedArray = newArray.unshift(n);
+//    console.log(newArray);
+//     return newArray;
+//    }
+// }
+  
+// console.log(countdown(10));
+
+
+/* Task 24 */
+
+// Ми визначили функцію під назвою rangeOfNumbers з двома параметрами.Функція повинна повернути масив цілих чисел,
+// що починається з числа, представленого параметром startNum і закінчується числом, представленим параметром endNum.
+// Початкове число завжди буде меншим або дорівнюватиме кінцевому числу.Ваша функція повинна використовувати рекурсію,
+// викликаючи саму себе, та не повинна використовувати цикли.
+// Вона також повинна працювати, якщо startNum та endNum однакові.
+
+function rangeOfNumbers(startNum, endNum) {
+
+   const numbers = [];
+
+  if (endNum < startNum) {
+    return [];
+  } else {
+     const numbers = rangeOfNumbers(startNum, endNum-1);
+   numbers.push(endNum);
+    return numbers;
+   }
+};
+
+console.log(rangeOfNumbers(1, 5));
+console.log(rangeOfNumbers(6, 9));
+console.log(rangeOfNumbers(4, 4));

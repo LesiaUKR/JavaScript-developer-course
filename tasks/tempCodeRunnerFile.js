@@ -1,15 +1,16 @@
-function getEvenNumbers(start, end) {
-   // Change code below this line
-  let evenNumbersArray = [];
+function rangeOfNumbers(startNum, endNum) {
 
-for (let i = start; i <= end; i+=1){
+   const numbers = [];
 
-  if (i % 2 === 0) {
-    evenNumbersArray.push(i)
-  }
-  return evenNumbersArray;
-}
-    // Change code above this line
-}
-  
-console.log(getEvenNumbers(3, 11));
+  if (endNum < startNum) {
+    return [];
+  } else {
+     const numbers = rangeOfNumbers(startNum, endNum-1);
+   numbers.push(endNum);
+    return numbers;
+   }
+};
+
+console.log(rangeOfNumbers(1, 5));
+console.log(rangeOfNumbers(6, 9));
+console.log(rangeOfNumbers(4, 4));
