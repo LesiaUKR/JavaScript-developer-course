@@ -23,7 +23,8 @@
    
 // }
 
-// const birthYear = 2000;
+// const 
+irthYear = 2000;
 // const yearNow = 2020;
 // const age = yearNow - birthYear;
 

@@ -418,19 +418,57 @@
 // викликаючи саму себе, та не повинна використовувати цикли.
 // Вона також повинна працювати, якщо startNum та endNum однакові.
 
-function rangeOfNumbers(startNum, endNum) {
+// function rangeOfNumbers(startNum, endNum) {
 
-   const numbers = [];
+//    const numbers = [];
 
-  if (endNum < startNum) {
-    return [];
-  } else {
-     const numbers = rangeOfNumbers(startNum, endNum-1);
-   numbers.push(endNum);
-    return numbers;
-   }
-};
+//   if (endNum < startNum) {
+//     return [];
+//   } else {
+//      const numbers = rangeOfNumbers(startNum, endNum-1);
+//    numbers.push(endNum);
+//     return numbers;
+//    }
+// };
 
-console.log(rangeOfNumbers(1, 5));
-console.log(rangeOfNumbers(6, 9));
-console.log(rangeOfNumbers(4, 4));
+// console.log(rangeOfNumbers(1, 5));
+// console.log(rangeOfNumbers(6, 9));
+// console.log(rangeOfNumbers(4, 4));
+
+
+/* Task 25 */
+
+// const numbers = [1, 2, [45, 67, [12]]];
+
+// function add(arr) {
+//   let total = 0; // undefined +1 ; NaN
+
+//   for (const item of arr) {
+//     if (Array.isArray(item)) {
+//     total+=add(item) //цією умовою розбиваємо загальний масив на підмасиви
+//     } else {
+//       total += item;
+//     }
+//     return total;
+// }
+// }
+
+/* Task 26 */
+
+// const weight = prompt("Enter your weight in kilograms");
+// const height = prompt("Enter your height in meters*");
+
+// const bodyMassIndex = weight / Math.pow(height, 2);
+
+// const areYouOverweight = bodyMassIndex >= 25;
+
+// if (areYouOverweight) {
+//     console.log(`Yes, your BMI is more than normal by ${bodyMassIndex - 25}`);
+//  alert(`Yes, your BMI is more than normal by ${bodyMassIndex - 25}`);
+// } else {
+//    console.log("No, your weight is normal");
+// alert("No, your weight is normal");
+ 
+// }
+
+/* Task 27 */
