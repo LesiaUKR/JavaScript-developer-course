@@ -1,4 +1,4 @@
-/********* Always falsy *********/ 
+/********* Always falsy *********/
 // // 0
 // console.log(Boolean(0));
 // // ""
@@ -24,13 +24,13 @@
 
 const age = 3;
 if (age) {
-   console.log('The person was born');
+  console.log('The person was born');
 } else {
-   (console.log('The person was not born yet'))
+  console.log('The person was not born yet');
 }
 
 if (weight) {
-   console.log('Weight is defined');
+  console.log('Weight is defined');
 } else {
-   console.log("Weight is not defined");
+  console.log('Weight is not defined');
 }

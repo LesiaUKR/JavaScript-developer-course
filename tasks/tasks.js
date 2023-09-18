@@ -52,7 +52,6 @@
 // const secondTree = myPlants[1].list[1];
 // console.log(secondTree);
 
-
 /* Task 4 */
 
 // const recordCollection = {
@@ -103,12 +102,12 @@
 // function calculateTotal(number) {
 //  // Change code below this line
 //    let total = 0;
-   
+
 // for(i=1; i<=number; i++){
 //    total += i;
 //    console.log(total);
 //     console.log(i);
-  
+
 //    }
 //     return total;
 //   // Change code above this line
@@ -147,7 +146,7 @@
 //    console.log(stringByWords);
 //    let longestWord = stringByWords[0];
 //    console.log(longestWord);
-   
+
 //    for (let i = 0; i < stringByWords.length; i += 1){
 //       console.log(stringByWords[i]);
 //       if (stringByWords[i].length > longestWord.length) {
@@ -181,10 +180,10 @@
 // const newNumbers = [];
 
 //    for (i = 0; i <= numbers.length; i += 1){
-   
+
 //    if (numbers[i] > value) {
 //       newNumbers.push(numbers[i])
-      
+
 //   }
 // }
 //   return newNumbers;
@@ -198,7 +197,7 @@
 // function getCommonElements(array1, array2) {
 //   // Change code below this line
 //    const identicalElementsArray = [];
-   
+
 //    for (const element of array1) {
 //       if (array2.includes(element)) {
 //           identicalElementsArray.push(element)
@@ -239,11 +238,11 @@
 //     evenNumbersArray.push(i)
 //   }
 //   }
-  
+
 //    return evenNumbersArray;
 //     // Change code above this line
 // }
-  
+
 // console.log(getEvenNumbers(3, 11));
 
 /* Task 14 */
@@ -268,7 +267,7 @@
 //       return multiply(arr, n - 1) * arr[n - 1];
 //     }
 // }
-  
+
 // console.log(multiply([1, 2, 3, 4], 3))
 
 /* Task 16 Рекурсія*/
@@ -281,7 +280,7 @@
 //       return sum(arr, n - 1) + arr[n - 1];
 //     }
 //   // Змініть код лише над цим рядком
-// } 
+// }
 
 // console.log(sum([1], 0));
 // console.log(sum([2, 3, 4], 1));
@@ -331,7 +330,6 @@
 //       }
 //    }
 //  return "No such contact"
-  
 
 //   // Змініть код лише над цим рядком
 // }
@@ -351,7 +349,7 @@
 
 /* Task 19 */
 
-// Створіть функцію під назвою randomRange, яка приймає діапазон myMin та myMax і 
+// Створіть функцію під назвою randomRange, яка приймає діапазон myMin та myMax і
 // повертає випадкове ціле число, яке більше або дорівнює myMin і менше або дорівнює myMax.
 
 // function randomRange(myMin, myMax) {
@@ -361,7 +359,7 @@
 
 /* Task 20 */
 
-// Використайте parseInt() у функції convertToInteger, щоб вхідний рядок str перетворився 
+// Використайте parseInt() у функції convertToInteger, щоб вхідний рядок str перетворився
 // на ціле число та повернувся.
 
 // function convertToInteger(str) {
@@ -406,9 +404,8 @@
 //     return newArray;
 //    }
 // }
-  
-// console.log(countdown(10));
 
+// console.log(countdown(10));
 
 /* Task 24 */
 
@@ -434,7 +431,6 @@
 // console.log(rangeOfNumbers(1, 5));
 // console.log(rangeOfNumbers(6, 9));
 // console.log(rangeOfNumbers(4, 4));
-
 
 /* Task 25 */
 
@@ -468,7 +464,7 @@
 // } else {
 //    console.log("No, your weight is normal");
 // alert("No, your weight is normal");
- 
+
 // }
 
 /* Task 27 */

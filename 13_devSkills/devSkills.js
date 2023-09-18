@@ -31,12 +31,13 @@
 
 //     if (currentHumidity > max) {
 //       max = currentHumidity;
+//       console.log(max);
 //     }
 //     if (currentHumidity < min) {
 //       min = currentHumidity;
+//       console.log(min);
 //     }
 //   }
-
 //   console.log(min, max);
 //   return max - min;
 // };
@@ -82,12 +83,16 @@
 // );
 // console.log(amplitude);
 
+/****** Debugging *****/
+
+// Task 1
+
 // const celciusToKelvin = function () {
 //   const measurement = {
 //     type: 'temp',
 //     unit: 'celcius',
-//     // value: Number(prompt('Temperature in Celcius: ')),
-//     value: 35,
+//     value: Number(prompt('Temperature in Celcius: ')),
+//     // value: 35,
 //   };
 
 //   // console.log(measurement);
@@ -103,36 +108,36 @@
 
 // console.log(celciusToKelvin());
 
-// // Debugging
+// Task 2
 
-// const calculateHumiditiesAmplitudeWithBug = function (h1, h2) {
-//   const humidities = h1.concat(h2);
-//   console.log(humidities);
+const calculateHumiditiesAmplitudeWithBug = function (h1, h2) {
+  const humidities = h1.concat(h2);
+  console.log(humidities);
 
-//   let max = 0;
-//   let min = 0;
+  let max = 0;
+  let min = 0;
 
-//   for (let i = 1; i < humidities.length; i++) {
-//     const currentHumidity = humidities[i];
-//     if (typeof currentHumidity !== 'number') continue;
-//     // debugger;
-//     if (currentHumidity > max) {
-//       max = currentHumidity;
-//     }
-//     if (currentHumidity < min) {
-//       min = currentHumidity;
-//     }
-//   }
+  for (let i = 1; i < humidities.length; i++) {
+    const currentHumidity = humidities[i];
+    if (typeof currentHumidity !== 'number') continue;
+    // debugger;
+    if (currentHumidity > max) {
+      max = currentHumidity;
+    }
+    if (currentHumidity < min) {
+      min = currentHumidity;
+    }
+  }
 
-//   console.log(min, max);
-//   return max - min;
-// };
+  console.log(min, max);
+  return max - min;
+};
 
-// const amplitude = calculateHumiditiesAmplitudeWithBug(
-//   [1, 20, 50],
-//   [23, 48, 78]
-// );
-// console.log(amplitude);
+const amplitude = calculateHumiditiesAmplitudeWithBug(
+  [1, 20, 50],
+  [23, 48, 78]
+);
+console.log(amplitude);
 
 // Dev Skills Task
 
@@ -154,19 +159,19 @@
 // - Add days number (item index + 1)
 // - Add ... at the beginning and the end of string and also between forecast values
 
-const data1 = [49, 51, 63];
-const data2 = [31, 29, 43, 58, 52];
+// const data1 = [49, 51, 63];
+// const data2 = [31, 29, 43, 58, 52];
 
-const printHumiditiesForecast = function (arr) {
-  // let str = '... ';
-  let str = '';
+// const printHumiditiesForecast = function (arr) {
+//   // let str = '... ';
+//   let str = '';
 
-  for (let i = 0; i < arr.length; i++) {
-    str += `${arr[i]}% in ${i + 1} days ... `;
-  }
+//   for (let i = 0; i < arr.length; i++) {
+//     str += `${arr[i]}% in ${i + 1} days ... `;
+//   }
 
-  console.log('... ' + str);
-};
+//   console.log('... ' + str);
+// };
 
-printHumiditiesForecast(data1);
-printHumiditiesForecast(data2);
+// printHumiditiesForecast(data1);
+// printHumiditiesForecast(data2);
