@@ -55,7 +55,7 @@
 const numbers = [34, 5, 32, 67];
 console.log(numbers);
 
-const anyItems = [4, true, new Date(), 'something']
+const anyItems = [4, true, new Date(), 'something'];
 console.log(anyItems);
 
 /****** Присвоєння за значенням чи за посиланням ******/
@@ -87,7 +87,6 @@ console.log(anyItems);
 // console.log(a === [1, 2, 3]); //завжди буде false
 // console.log(b === [1, 2, 3]); //завжди буде false
 
-
 /******* ПЕРЕБІР МАСИВУ *******/
 
 /*** Цикл for ***/
@@ -113,7 +112,7 @@ console.log(anyItems);
 // let total = 0;
 
 // for (let i = 0; i < myArr.length; i++) {
-   
+
 //    total += myArr[i];
 //    console.log(total);
 // }
@@ -197,7 +196,6 @@ console.log(anyItems);
 
 // console.log(myArray);
 
-
 /*** 1. Зробити незалежну копію масиву ***/
 
 let a = [1, 2, 3];
@@ -209,4 +207,66 @@ let d = [].concat(a);
 // console.log('c', c);
 // console.log(a === d);
 
+/*** Напиши функцію calculateTotal(number), яка приймає ціле число (параметр number) і
+ * повертає суму всіх цілих чисел від одиниці і до цього числа. Наприклад, якщо number
+ * дорівнює 3, то сума - це 1 + 2 + 3, тобто 6***/
 
+function calculateTotal(number) {
+  // Change code below this line
+  let total = 0;
+
+  for (i = 1; i <= number; i += 1) {
+    total += i;
+  }
+
+  return total;
+  // Change code above this line
+}
+
+console.log(calculateTotal(4));
+
+/*** Напиши функцію calculateTotalPrice(order), яка приймає один параметр order - масив чисел,
+ і обчислює загальну суму його елементів. Загальна сума елементів повинна зберігатися у 
+ змінній total, яка повертається як результат роботи функції. ***/
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+//   for (item of order) {
+//     total += item;
+//   }
+//   // Change code above this line
+//   return total;
+// }
+
+function calculateTotalPrice(order) {
+  let total = 0;
+  // Change code below this line
+  for (i = 0; i < order.length; i += 1) {
+    total += order[i];
+  }
+  // Change code above this line
+  return total;
+}
+console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+/*** Напиши функцію findLongestWord(string), яка приймає довільний рядок, що складається 
+ тільки зі слів, розділених пробілом (параметр string), і повертає найдовше слово в цьому
+  рядку. ***/
+
+function findLongestWord(string) {
+  // Change code below this line
+  let stringByWords = string.split(' ');
+  console.log(stringByWords);
+  let longestWord = stringByWords[0];
+  console.log(longestWord);
+
+  for (let i = 0; i < stringByWords.length; i += 1) {
+    console.log(stringByWords[i]);
+    if (stringByWords[i].length > longestWord.length) {
+      longestWord = stringByWords[i];
+    }
+  }
+  return longestWord;
+  // Change code above this line
+}
