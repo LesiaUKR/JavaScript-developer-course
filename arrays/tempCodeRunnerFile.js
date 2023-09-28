@@ -1,10 +1,15 @@
-function calculateTotalPrice(order) {
-  let total = 0;
+function getCommonElements(array1, array2) {
   // Change code below this line
-  for (i = 0; i < order.length; i += 1) {
-    total += order[i];
+  const identicalElementsArray = [];
+
+  for (const element of array1) {
+    if (array2.includes(element)) {
+      identicalElementsArray.push(element);
+    }
+    console.log(element);
   }
+  return identicalElementsArray;
   // Change code above this line
-  return total;
 }
-console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+console.log(getCommonElements([1, 2, 3], [2, 4]));

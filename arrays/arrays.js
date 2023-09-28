@@ -259,7 +259,6 @@ function findLongestWord(string) {
   let stringByWords = string.split(' ');
   console.log(stringByWords);
   let longestWord = stringByWords[0];
-  console.log(longestWord);
 
   for (let i = 0; i < stringByWords.length; i += 1) {
     console.log(stringByWords[i]);
@@ -268,5 +267,74 @@ function findLongestWord(string) {
     }
   }
   return longestWord;
+  // Change code above this line
+}
+
+console.log(findLongestWord('hello worlds'));
+
+/*** Напиши функцію getCommonElements(array1, array2), яка отримує два масиви довільної довжини в параметри
+ array1 і array2, і повертає новий масив, що складається з тих елементів, які присутні в обох вихідних масивах.***/
+function getCommonElements(array1, array2) {
+  // Change code below this line
+  const identicalElementsArray = [];
+
+  for (const element of array1) {
+    if (array2.includes(element)) {
+      identicalElementsArray.push(element);
+    }
+    console.log(element);
+  }
+  return identicalElementsArray;
+  // Change code above this line
+}
+
+console.log(getCommonElements([1, 2, 3], [2, 4]));
+
+/*** Виконай рефакторинг коду функції calculateTotalPrice(order), замінивши цикл for на for...of. ***/
+
+function calculateTotalPrice(order) {
+  let total = 0;
+  // Change code below this line
+
+  for (let element of order) {
+    total += element;
+  }
+
+  // Change code above this line
+  return total;
+}
+
+/*** Напиши функцію getEvenNumbers(start, end), яка повертає масив усіх парних чисел від start до end.
+ * Парним вважається число, яке ділиться на 2 без остачі (10 % 2 === 0). ***/
+
+function getEvenNumbers(start, end) {
+  // Change code below this line
+  let evenNumbersArray = [];
+
+  for (let i = start; i <= end; i += 1) {
+    console.log(i);
+    if (i % 2 === 0) {
+      evenNumbersArray.push(i);
+    }
+  }
+
+  return evenNumbersArray;
+
+  // Change code above this line
+}
+
+/*** Напиши функцію includes(array, value), яка робить те саме, що і метод масиву масив.includes(значення) - перевіряє, 
+ * чи присутнє в масиві array значення value, повертаючи true, якщо присутнє, і false в іншому випадку.
+При виконанні цього завдання в тілі функції includes() не можна використовувати метод масив.includes(значення). ***/
+
+function includes(array, value) {
+  // Change code below this line
+
+  for (const element of array) {
+    if (element === value) {
+      return true;
+    }
+  }
+  return false;
   // Change code above this line
 }
