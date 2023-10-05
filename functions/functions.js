@@ -354,40 +354,54 @@
 // Якщо масив товарів порожній, функція повинна викликати колбек onError, передаючи йому рядок "No products found".
 // Для форматування середньої ціни використовується метод toFixed(2), щоб обмежити число до двох десяткових знаків.
 
-const products = [
-  { name: 'Apple', price: 0.99 },
-  { name: 'Banana', price: 0.49 },
-  { name: 'Orange', price: 0.79 },
-  { name: 'Mango', price: 1.99 },
-];
+// const products = [
+//   { name: 'Apple', price: 0.99 },
+//   { name: 'Banana', price: 0.49 },
+//   { name: 'Orange', price: 0.79 },
+//   { name: 'Mango', price: 1.99 },
+// ];
 
-function calculateAveragePrice(products, onSuccess, onError) {
-  if (!products.length) {
-    // products.length === 0
-    onError('No products found');
-    return;
-  }
+// function calculateAveragePrice(products, onSuccess, onError) {
+//   if (!products.length) {
+//     // products.length === 0
+//     onError('No products found');
+//     return;
+//   }
 
-  let total = 0;
+//   let total = 0;
 
-  // products.forEach((product) => total += product.price);
-  products.forEach(({ price }) => (total += price));
+//   // products.forEach((product) => total += product.price);
+//   products.forEach(({ price }) => (total += price));
 
-  const averagePrice = total / products.length;
-  onSuccess(averagePrice);
-}
+//   const averagePrice = total / products.length;
+//   onSuccess(averagePrice);
+// }
 
-const onSuccess = averagePrice => {
-  console.log(`Average price ${averagePrice.toFixed(2)}`);
-};
+// const onSuccess = averagePrice => {
+//   console.log(`Average price ${averagePrice.toFixed(2)}`);
+// };
 
-const onError = errorMessage => {
-  console.log(`Error! ${errorMessage}`);
-};
+// const onError = errorMessage => {
+//   console.log(`Error! ${errorMessage}`);
+// };
 
-calculateAveragePrice(products, onSuccess, onError);
+// calculateAveragePrice(products, onSuccess, onError);
 
-const result = value => (value > 5 ? value - 5 : value + 5);
-console.log(result(4));
+// const result = value => (value > 5 ? value - 5 : value + 5);
+// console.log(result(4));
+
+/***  Task - 5 ****/
+
+// Доповни код таким чином, щоб у змінній result був результат виконання функції makePizza,
+// а у змінній pointer було посилання на функцію makePizza.
+// function makePizza() {
+//   return 'Your pizza is being prepared, please wait.';
+// }
+// // Change code below this line
+
+// const result = makePizza();
+// const pointer = makePizza;
 
 /*** Псевдомасив аргументів ***/
+
+/***  Task - 6 ****/
