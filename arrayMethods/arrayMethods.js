@@ -828,13 +828,13 @@ const users = [
 //     .sort((prevName, nextName) => prevName.localeCompare(nextName));
 // };
 
-const getSortedFriends = users => {
-  return users
-    .flatMap(user => user.friends)
-    .filter(
-      (userFriendsName, idx, array) => array.indexOf(userFriendsName) === idx
-    )
-    .sort((prevName, nextName) => prevName.localeCompare(nextName));
-};
+// const getSortedFriends = users => {
+//   return users
+//     .flatMap(user => user.friends)
+//     .filter(
+//       (userFriendsName, idx, array) => array.indexOf(userFriendsName) === idx
+//     )
+//     .sort((prevName, nextName) => prevName.localeCompare(nextName));
+// };
 
-console.log(getSortedFriends(users));
+// console.log(getSortedFriends(users));
