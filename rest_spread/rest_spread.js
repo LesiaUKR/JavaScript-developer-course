@@ -206,39 +206,39 @@
 // Необхідно зрoбити рефакторинг функції calculateHousePerimeter, так щоб вона приймала об'єкт з параметрами будинку,
 //  включаючи довжини сторін будинку.Функція повинна розрахувати та повернути периметр будинку.
 
-function calculateHousePerimeter({ sideA: a, sideB: b, sideC: c, sideD: d }) {
-  const perimeter = a + b + c + d;
-  return perimeter;
-}
+// function calculateHousePerimeter({ sideA: a, sideB: b, sideC: c, sideD: d }) {
+//   const perimeter = a + b + c + d;
+//   return perimeter;
+// }
 
-const perimeter = calculateHousePerimeter({
-  sideA: 10,
-  sideB: 15,
-  sideC: 10,
-  sideD: 15,
-});
-console.log(`Периметр будинку: ${perimeter}`);
+// const perimeter = calculateHousePerimeter({
+//   sideA: 10,
+//   sideB: 15,
+//   sideC: 10,
+//   sideD: 15,
+// });
+// console.log(`Периметр будинку: ${perimeter}`);
 
-function foo(...args) {
-  console.log(args);
-  console.log(arguments);
-  const arr = [...arguments];
-  const arr2 = Array.from(arguments);
-}
-foo('a', 'b', 'c', 'd');
-console.log('-----------');
-foo('a', 'b', 'c', 'd', 'e');
-console.log('-----------');
-foo('a', 'b', 'c');
-const boo = function () {
-  console.log(arguments);
-};
+// function foo(...args) {
+//   console.log(args);
+//   console.log(arguments);
+//   const arr = [...arguments];
+//   const arr2 = Array.from(arguments);
+// }
+// foo('a', 'b', 'c', 'd');
+// console.log('-----------');
+// foo('a', 'b', 'c', 'd', 'e');
+// console.log('-----------');
+// foo('a', 'b', 'c');
+// const boo = function () {
+//   console.log(arguments);
+// };
 
-boo(1, 2, 3, 4, 5);
+// boo(1, 2, 3, 4, 5);
 
-const foo = (...args) => {
-  console.log(args);
-  // console.log(arguments);//Error
-};
+// const foo = (...args) => {
+//   console.log(args);
+//   // console.log(arguments);//Error
+// };
 
-foo(1, 2, 3, 4, 5);
+// foo(1, 2, 3, 4, 5);
