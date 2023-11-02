@@ -1,5 +1,6 @@
-let arr = [1, 2, 3];
-let arr2 = [...arr];
-arr2.push(4)
+function multiply(multiplier, ...theArgs) {
+  return theArgs.map(element => multiplier * element);
+}
+
+let arr = multiply(2, 1, 2, 3);
 console.log(arr);
-console.log(arr2);
