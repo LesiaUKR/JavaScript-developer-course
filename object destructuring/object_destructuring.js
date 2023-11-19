@@ -195,18 +195,18 @@ const forecast = {
 };
 // Change code below this line
 
-const {
-  today: {
-    low: lowToday,
-    high: highToday,
-    icon: todayIcon = 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg',
-  },
-  tomorrow: {
-    low: lowTomorrow,
-    high: highTomorrow,
-    icon: tomorrowIcon = 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg',
-  },
-} = forecast;
+// const {
+//   today: {
+//     low: lowToday,
+//     high: highToday,
+//     icon: todayIcon = 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg',
+//   },
+//   tomorrow: {
+//     low: lowTomorrow,
+//     high: highTomorrow,
+//     icon: tomorrowIcon = 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg',
+//   },
+// } = forecast;
 // const highToday = forecast.today.high;
 // const lowToday = forecast.today.low;
 // const todayIcon = forecast.today.icon;
@@ -593,3 +593,90 @@ const atTheOldToad = {
 // // console.log(atTheOldToad);
 // atTheOldToad.updatePotionName('Dragon breath', 'Polymorth');
 // console.log(atTheOldToad);
+
+// ********  Task 19 *********//
+
+// Деструктуроване присвоєння для присвоєння змінних з об’єктів
+// Деструктуризація дозволяє присвоїти нову назву змінної при вилученні значень.
+// Для цього потрібно поставити нову назву після двокрапки, коли присвоюєте значення.
+
+// Використовуючи той самий об’єкт, що і в попередньому прикладі:
+
+// const user = { name: 'John Doe', age: 34 };
+// Ось так ви можете надати нові назви змінних у присвоєнні:
+
+// const { name: userName, age: userAge } = user;
+// Ви можете прочитати це як «отримати значення user.name та присвоїти його до нової
+// змінної під назвою userName» і т.д.Значенням userName буде рядок John Doe,
+// а значенням userAge буде число 34.
+
+// Замініть два присвоєння на еквівалентні деструктуровані присвоєння. Вони досі
+// повинні присвоювати змінним highToday та highTomorrow значення today та
+// tomorrow з об’єкта HIGH_TEMPERATURES.
+
+// const HIGH_TEMPERATURES = {
+//   yesterday: 75,
+//   today: 77,
+//   tomorrow: 80,
+// };
+
+// const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;
+
+// ********  Task 20 *********//
+
+// Деструктуроване присвоєння для присвоєння змінних з вкладених об’єктів
+// Ви можете використовувати принципи з попередніх завдань, щоб деструктурувати значення з вкладених об’єктів.
+
+// Використовуючи об’єкт, схожий до попередніх прикладів:
+
+const user = {
+  johnDoe: {
+    age: 34,
+    email: 'johnDoe@freeCodeCamp.com',
+  },
+};
+// Ось так ми отримуємо значення властивостей об’єкта та присвоюємо їх до змінних з однаковою назвою:
+
+const {
+  johnDoe: { age, email },
+} = user;
+// А ось так ми можемо присвоїти значення властивостей об’єкта до змінних з іншою назвою:
+
+const {
+  johnDoe: { age: userAge, email: userEmail },
+} = user;
+
+// Замініть два присвоєння на еквівалентні деструктуровані присвоєння.
+// Вони досі повинні присвоювати змінним lowToday та highToday значення
+// today.low та today.high з об’єкта LOCAL_FORECAST.
+
+const LOCAL_FORECAST = {
+  yesterday: { low: 61, high: 75 },
+  today: { low: 64, high: 77 },
+  tomorrow: { low: 68, high: 80 },
+};
+
+// const lowToday = LOCAL_FORECAST.today.low;
+// const highToday = LOCAL_FORECAST.today.high;
+
+// Рішення
+
+const {
+  today: { low: lowToday },
+} = LOCAL_FORECAST;
+const {
+  today: { high: highToday },
+} = LOCAL_FORECAST;
+
+// ********  Task 21 *********//
+
+function removeFirstTwo(list) {
+  const [a, b, ...arr] = list;
+  console.log('first two', [a, b]);
+  console.log('sourceWithoutFirstTwo', arr);
+  return arr;
+}
+
+const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const sourceWithoutFirstTwo = removeFirstTwo(source);
+console.log(sourceWithoutFirstTwo);
