@@ -50,3 +50,12 @@
 // setImmediate
 // https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
 // requestAnimationFrame
+
+// ********* Links ********* \\
+// https://www.postman.com/downloads/
+// https://rickandmortyapi.com/documentation
+// https://www.weatherapi.com/docs/
+// https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest_API/Using_XMLHttpRequest
+
+// Приклад документації до API
+// https://rickandmortyapi.com/documentation/#rest
