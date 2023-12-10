@@ -1,7 +1,4 @@
-let name = 'John';
-
-function printName() {
-   let name = 'Peter';
-   console.log(name);
-}
-printName()
+(function (a) {
+  arguments[0] = 10;
+  return a;
+})(5);
