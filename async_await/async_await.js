@@ -257,7 +257,7 @@ async function serviceCountries() {
     return resp.json();
   });
   console.log(responses);
-  const data = await Promise.allSettled(responses); //щоб отримат данні,
+  const data = await Promise.allSettled(responses); //щоб отримати данні,
   // а не Promise використовуємо allSettled
   console.log(data);
 }

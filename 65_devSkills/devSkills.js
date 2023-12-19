@@ -159,19 +159,19 @@ console.log(amplitude);
 // - Add days number (item index + 1)
 // - Add ... at the beginning and the end of string and also between forecast values
 
-// const data1 = [49, 51, 63];
-// const data2 = [31, 29, 43, 58, 52];
+const data1 = [49, 51, 63];
+const data2 = [31, 29, 43, 58, 52];
 
-// const printHumiditiesForecast = function (arr) {
-//   // let str = '... ';
-//   let str = '';
+const printHumiditiesForecast = function (arr) {
+  // let strDots = '... ';
+  let str = '';
 
-//   for (let i = 0; i < arr.length; i++) {
-//     str += `${arr[i]}% in ${i + 1} days ... `;
-//   }
+  for (let i = 0; i < arr.length; i++) {
+    str += `${arr[i]}% in ${i + 1} days ... `;
+  }
 
-//   console.log('... ' + str);
-// };
+  console.log('... ' + str);
+};
 
-// printHumiditiesForecast(data1);
-// printHumiditiesForecast(data2);
+printHumiditiesForecast(data1);
+printHumiditiesForecast(data2);
