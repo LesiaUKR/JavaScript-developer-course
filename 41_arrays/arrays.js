@@ -39,8 +39,8 @@
 
 /*** 1. create new Array ***/
 
-// const stringNumbers = [];
-// stringNumbers[0] = 'one';
+// const stringNumbers = []; //пустий масив
+// stringNumbers[0] = 'one'; //додаємо елементи в масив
 // stringNumbers[1] = 'two';
 // stringNumbers[2] = 'three';
 // console.log(stringNumbers);

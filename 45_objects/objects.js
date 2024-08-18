@@ -1,5 +1,24 @@
-/******  ******/
-/*** ***/
+// не зручно використовувати індексацію, коли потрібно отримати значення
+// потрібно знати індекс, але коли ми використовуємо об'єкт, ми можемо
+// використовувати ключі, які ми знаємо, що вони є унікальними
+myData = [
+  'YouRa',
+  'Allakhverdov',
+  1974,
+  'programming instructor',
+  ['Irina', 'Michael']
+];
+console.log(myData[4]); 
+
+youraObject = {
+  name: 'YouRa',
+  lastname: 'Allakhverdov',
+  birthYear: 1975,
+  job: 'programming instructor',
+  familyMembers: ['Irina', 'Michael']
+};
+console.log(youraObject); 
+
 // ****************Об'єкт**************** \\
 // const user = {
 //   name: 'Alice',
