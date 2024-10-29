@@ -16,6 +16,7 @@ console.log('LOOP IN LOOP');
 for (let exercise = 1; exercise <= 3; exercise++) {
    console.log(`Exercise ${exercise}`);
 
+   //виводимо для кожного вправи 5 повторень - rep(repetition)
    for (let rep = 1; rep <= 5; rep++) {
       console.log(`Ex ${exercise} Rep ${rep}`);
    }
